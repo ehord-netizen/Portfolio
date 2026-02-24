@@ -1,0 +1,194 @@
+/* ===============================
+   COLOR PALETTE
+================================= */
+:root {
+    --primary-100: #1F3A5F;
+    --primary-200: #4D648D;
+    --primary-300: #ACC2EF;
+
+    --accent-100: #3D5A80;
+    --accent-200: #CEE8FF;
+
+    --text-100: #FFFFFF;
+    --text-200: #E0E0E0;
+
+    --bg-100: #0F1C2E;
+    --bg-200: #1F2B3E;
+    --bg-300: #374357;
+}
+
+/* ===============================
+   GLOBAL STYLES
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-100);
+    color: var(--text-100);
+    line-height: 1.6;
+}
+
+/* ===============================
+   NAVIGATION
+================================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--bg-200);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-100);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-300);
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+.hero {
+    padding: 100px 10%;
+    background: linear-gradient(
+        135deg,
+        var(--primary-100),
+        var(--bg-100)
+    );
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    color: var(--text-200);
+}
+
+/* ===============================
+   SECTIONS
+================================= */
+section {
+    padding: 80px 10%;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--primary-200);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* ===============================
+   GRID LAYOUT
+================================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ===============================
+   CARDS
+================================= */
+.card {
+    background-color: var(--bg-200);
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    background-color: var(--bg-300);
+    transform: translateY(-6px);
+    border-color: var(--primary-200);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: var(--text-200);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.button {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: var(--primary-200);
+    color: var(--text-100);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-300);
+    color: var(--bg-100);
+}
+
+/* ===============================
+   FOOTER
+================================= */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--bg-200);
+    color: var(--text-200);
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
