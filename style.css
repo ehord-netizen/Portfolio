@@ -192,3 +192,29 @@ footer {
         gap: 15px;
     }
 }
+/* ===============================
+   ABOUT PAGE (VERTICAL LAYOUT)
+================================= */
+
+.about-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text {
+    margin-bottom: 40px;
+    color: var(--text-200);
+    line-height: 1.8;
+}
+
+.about-image {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
