@@ -248,3 +248,35 @@ footer {
 .project-card p {
     margin-bottom: 15px;
 }
+
+
+/* ===============================
+   WEEKLY ARTICLES (CARD STYLE)
+================================= */
+
+details {
+    background-color: var(--bg-200);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Hover effect like cards */
+details:hover {
+    background-color: var(--bg-300);
+    border-color: var(--primary-200);
+}
+
+/* Summary (the clickable title) */
+summary {
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Space inside dropdown content */
+details .card {
+    margin-top: 15px;
+}
