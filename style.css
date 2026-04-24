@@ -240,24 +240,10 @@ footer {
 }
 
 /* ===============================
-   PROJECT IMAGE FIX (BALANCED)
+   PROJECT IMAGE BALANCE FIX
 ================================= */
 
-.project-images {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-/* Force equal height + clean crop */
-.project-images img {
-    width: 50%;
-    height: 220px;          /* controls visual size */
-    object-fit: cover;      /* crops instead of stretching */
-    border-radius: 8px;
-}
-
-/* Single image (Project 1) */
+/* Main image (both projects) */
 .project-img {
     width: 100%;
     height: 220px;
@@ -266,32 +252,8 @@ footer {
     margin-bottom: 15px;
 }
 
-/* Mobile fix */
-@media (max-width: 768px) {
-    .project-images {
-        flex-direction: column;
-    }
-
-    .project-images img {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-/* Clickable image effect */
-.project-images a,
-.project-card a {
-    display: block;
-}
-
-.project-images img,
-.project-img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.project-images img:hover,
-.project-img:hover {
-    transform: scale(1.03);
+/* Second image (smaller but still clean) */
+.secondary-img {
+    height: 180px;
     opacity: 0.9;
-    cursor: pointer;
 }
