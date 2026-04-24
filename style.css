@@ -277,3 +277,21 @@ footer {
         height: 200px;
     }
 }
+
+/* Clickable image effect */
+.project-images a,
+.project-card a {
+    display: block;
+}
+
+.project-images img,
+.project-img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-images img:hover,
+.project-img:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+    cursor: pointer;
+}
