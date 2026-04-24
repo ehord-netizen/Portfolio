@@ -221,39 +221,30 @@ footer {
 
 
 /* ===============================
-   PROJECTS SECTION FIX
+   PROJECTS (CLEAN + BALANCED)
 ================================= */
 
 .project-card {
     text-align: left;
 }
 
-.project-img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* Better spacing for paragraphs inside cards */
-.project-card p {
-    margin-bottom: 15px;
-}
-
-/* ===============================
-   PROJECT IMAGE BALANCE FIX
-================================= */
-
-/* Main image (both projects) */
+/* Main project image */
 .project-img {
     width: 100%;
     height: 220px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-/* Second image (smaller but still clean) */
-.secondary-img {
-    height: 180px;
-    opacity: 0.9;
+/* Hover effect */
+.project-img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* Paragraph spacing */
+.project-card p {
+    margin-bottom: 15px;
 }
