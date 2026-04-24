@@ -238,3 +238,26 @@ footer {
 .project-card p {
     margin-bottom: 15px;
 }
+
+/* ===============================
+   PROJECT IMAGE FIX
+================================= */
+
+.project-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-images img {
+    width: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Ensure single images still look good */
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
