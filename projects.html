@@ -1,52 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects | Elias Hord</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<nav>
-    <h1>Elias Hord</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="articles.html">Weekly Articles</a></li>
-    </ul>
-</nav>
-
 <section>
-    <h3>Projects</h3>
+<h3>Projects & Additional Coursework</h3>
 
-    <div class="grid">
+<div class="grid">
 
-        <div class="card">
-            <h4>AI Construction Tools Analysis</h4>
-            <p>Evaluation of AI tools improving scheduling, estimation, and safety analytics.</p>
-            <a href="project1.html" class="button">View Details</a>
-        </div>
+    <!-- PROJECT 1 -->
+    <div class="card">
+        <h4>Togal.AI Demo</h4>
 
-        <div class="card">
-            <h4>BIM + AI Integration Study</h4>
-            <p>Research exploring machine learning integration in BIM workflows.</p>
-            <a href="project2.html" class="button">View Details</a>
-        </div>
+        <img src="files/projects/togal-demo.png" alt="Togal AI Demo"
+             style="width:100%; border-radius:8px; margin-bottom:15px;">
 
-        <div class="card">
-            <h4>Facilities Management Automation</h4>
-            <p>Investigation into predictive maintenance and smart building systems.</p>
-            <a href="project3.html" class="button">View Details</a>
-        </div>
+        <p>
+            This project focused on evaluating the native AI capabilities of Togal.AI 
+            while also gaining experience with its manual takeoff tools. Five different 
+            plan sets were analyzed, each varying in level of detail and type 
+            (elevations, foundations, and floor plans). The goal was to assess accuracy 
+            and identify strengths and weaknesses of the system.
+        </p>
 
+        <p>
+            The most common errors occurred in identifying wall perimeters and centerlines. 
+            The AI frequently detected elements that resembled walls but were not, and often 
+            misaligned centerlines along interior or exterior dimensions. Conversely, the system 
+            performed well in identifying repeated objects such as doors, toilets, and showers.
+        </p>
+
+        <p>
+            Another limitation observed was the inability to generate quantities from pure 
+            elevation drawings, which often resulted in errors after extended processing times.
+        </p>
     </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+        <h4>Estimating with AI</h4>
+
+        <img src="files/projects/ai-estimating.png" alt="AI Estimating Prompt"
+             style="width:100%; border-radius:8px; margin-bottom:15px;">
+
+        <p>
+            This project explored the use of AI tools such as ChatGPT and Claude for 
+            quantity takeoffs and cost estimation. Various prompts and configurations 
+            were tested to determine which methods produced the most accurate results.
+        </p>
+
+        <p>
+            Key findings included the importance of providing clear and specific inputs, 
+            as well as the impact of using advanced “thinking” modes, which improved 
+            accuracy but increased response time. Higher-tier AI models also produced 
+            more detailed and refined outputs.
+        </p>
+
+        <p>
+            Additional insights showed that Claude tended to be more detail-oriented, 
+            while ChatGPT had limitations such as not being able to directly generate 
+            Word documents. The quality of scanned drawings was also found to significantly 
+            impact output accuracy.
+        </p>
+    </div>
+
+</div>
 </section>
-
-<footer>
-    © 2026 Elias Hord
-</footer>
-
-</body>
-</html>
